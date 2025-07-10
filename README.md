@@ -29,5 +29,5 @@ A full-featured, local-first **Agentic Retrieval-Augmented Generation (RAG)** ap
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/agentic_rag_app_local.git
+git clone https://github.com/Faiqlatheef/agentic-rag-app-offline.git
 cd agentic_rag_app_local
