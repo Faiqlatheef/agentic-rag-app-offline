@@ -14,17 +14,22 @@ The Agentic RAG App is a locally hosted Retrieval-Augmented Generation (RAG) sys
 
 ```
 agentic_rag_app_local/
-├── app.py                  # Main application entry point
-├── .env                    # Configuration variables (model name, ports)
-├── requirements.txt        # Python dependencies
-├── README.md               # Project overview
-├── DOCUMENTATION.md        # Full documentation (this file)
+├── app.py                     # Application entrypoint
+├── requirements.txt          # Project dependencies
+├── README.md                 # Setup guide
+├── data/
+│   └── sample_docs.txt       # Source documents for retrieval
+├── logs/
+│   └── rag_agent.log         # Runtime logs
+├── config/
+│   └── settings.py           # Configurable parameters
 ├── agent/
-│   └── rag_agent.py        # Core RAG logic: embedding, vector store, context
-├── ui/
-│   └── gradio_ui.py        # Gradio UI and user interactions
-└── utils/
-    └── file_loader.py      # Multi-format document loader
+│   ├── base_agent.py         # Base agent class
+│   ├── rag_agent.py          # RAG logic (retrieval + LLM)
+│   └── utils.py              # Logging and file helpers
+└── ui/
+    └── gradio_ui.py         # UI code
+
 ```
 
 ---
