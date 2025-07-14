@@ -1,4 +1,4 @@
-# 📚 Full Documentation: Agentic RAG App (Local, No API Cost)
+# Agentic RAG App (Local, No API Cost)
 
 ## 🧠 Overview
 
