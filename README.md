@@ -132,14 +132,17 @@ Switched from `(question, answer)` tuples to:
 {"role": "assistant", "content": "..."}
 ```
 
-### 7. ⚙️ Env Configuration
+### 7. ⚙️ Configuration
 
-`.env` file:
+`settings.py` file:
 
-```dotenv
-LLM_MODEL=llama3
-VECTOR_DB_PATH=vector_store/
-EMBED_MODEL=all-MiniLM-L6-v2
+```settings
+DOCUMENT_PATH = "data/sample_docs.txt"
+LOG_PATH = "logs/rag_agent.log"
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 50
+TOP_K = 3
+LLM_MODEL = "llama3"
 ```
 
 ---
